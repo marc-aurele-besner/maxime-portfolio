@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { Loader, MeshReflectorMaterial, OrbitControls } from '@react-three/drei'
+import { Loader, OrbitControls } from '@react-three/drei'
 import { ResizeObserver } from '@juggle/resize-observer'
 
 import Gonk from '../models/Gonk'
@@ -66,22 +66,6 @@ const Gallery3D = ({
             rotation={new THREE.Euler(0, 0, 0)}
             scale={new THREE.Vector3(0.02, 0.02, 0.02)}
           />
-
-          <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 5]}>
-            <planeGeometry args={[200, 200]} />
-            <MeshReflectorMaterial
-              blur={[300, 100]}
-              resolution={2048}
-              mixBlur={1}
-              mixStrength={60}
-              roughness={1}
-              depthScale={1.2}
-              minDepthThreshold={0.4}
-              maxDepthThreshold={1.4}
-              color="#151515"
-              metalness={0.5}
-            />
-          </mesh>
 
           <spotLight
             color="#FFFFFF"
