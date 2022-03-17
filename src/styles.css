@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  #root {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  body {
+    background: black;
+    color: white;
+    user-select: none;
+    font-family: 'Roboto', 'Trebuchet MS', sans-serif;
+  }
+  
+  .main {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .embeded {
+    width: 59.6vw;
+    height: 60vh;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 3vh;
+    right: 3vw;
+    font-size: 2.5em;
+    font-weight: 200;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -2px;
+  }
