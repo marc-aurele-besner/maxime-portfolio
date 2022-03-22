@@ -10,6 +10,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
     "@juggle/resize-observer": "^3.3.1",
     "@react-three/drei": "^8.16.7",
     "@react-three/fiber": "^7.0.26",

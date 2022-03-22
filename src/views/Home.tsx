@@ -1,17 +1,16 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from 'styled-components'
-import Typewriter from 'typewriter-effect'
+// import Typewriter from 'typewriter-effect'
 
-import Gallery3D from '../components/Gallery3D'
+// import Gallery3D from '../components/Gallery3D'
 
+  // overflow:scroll;
 const StyledHome = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  height: 90vh;
-  overflow:scroll;
   overflow-x:hidden;
 `
 const StyledTitle = styled.h1`
@@ -44,38 +43,63 @@ const StyledImagePreview = styled.img`
 */
 
 
-const StyledGalleryPreview = styled.div`
-  align-items: center;
-  width: 60vw;
-  margin-top: 6vh;
-  cursor: pointer;
-`
+// const StyledGalleryPreview = styled.div`
+//   align-items: center;
+//   width: 60vw;
+//   margin-top: 6vh;
+//   cursor: pointer;
+// `
 
 const Center = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: calc(80vh - 30px);
   justify-content: center;
 `
 
-const StyledLinkVisitGallery = styled(Link)`
-  color: #fff;
-  font-size: 1.5rem;
+// const StyledLinkVisitGallery = styled(Link)`
+//   color: #fff;
+//   font-size: 1.5rem;
 
-  &:hover {
-    color: #adadad;
+//   &:hover {
+//     color: #adadad;
+//   }
+// `
+
+// const StyledTypewriter = styled.div`
+//   color: #fff;
+//   font-size: 1.5rem;
+//   height: 10vh;
+
+//   &:hover {
+//     color: #adadad;
+//   }
+// `
+
+const ModelsGrid = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 24px;
+  padding-top: 24px;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `
 
-const StyledTypewriter = styled.div`
-  color: #fff;
-  font-size: 1.5rem;
-  height: 10vh;
+const Image = styled.img`
+  margin-right: 16px;
+  width: 30vw;
+  cursor: pointer;
 
-  &:hover {
-    color: #adadad;
+  @media only screen and (max-width: 600px) {
+    width: 90vw;
   }
+`
+
+const Content = styled.div`
+  flex: 1;
 `
 
 const Home: React.FC = () => {
@@ -86,7 +110,7 @@ const Home: React.FC = () => {
         <br />
         <br />
         <StyledTitle>Maxime</StyledTitle>
-        <StyledTypewriter>
+       {/* <StyledTypewriter>
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -102,15 +126,26 @@ const Home: React.FC = () => {
               loop: true,
             }}
           />
-        </StyledTypewriter>
+        </StyledTypewriter> */}
         <br />
         <br />
-        <StyledGalleryPreview>
-          <Gallery3D idEmbeded={true} />
-        </StyledGalleryPreview>
+        <ModelsGrid>
+          <Content>
+            <Image src='/images/Gonk.png' alt='Gonk' onClick={() => window.open('/gallery/Gonk')} />
+          </Content>
+          <Content>
+            <Image src='/images/Gunblade.png' alt='GunbladeScene' onClick={() => window.open('/gallery/GunbladeScene')} />
+          </Content>
+          <Content>
+            <Image src='/images/Desk.png' alt='Desk' onClick={() => window.open('/gallery/Desk')} />
+          </Content>
+          <Content>
+            <Image src='/images/Gunblade2.png' alt='Gunblade' onClick={() => window.open('/gallery/Gunblade')} />
+          </Content>
+        </ModelsGrid>
         <br />
         <br />
-        <StyledLinkVisitGallery to="/gallery">Visit the gallery</StyledLinkVisitGallery>
+        {/* <StyledLinkVisitGallery to="/gallery">Visit the gallery</StyledLinkVisitGallery> */}
         <br />
       </Center>
     </StyledHome>

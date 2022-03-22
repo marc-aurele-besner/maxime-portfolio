@@ -4,6 +4,7 @@
 # production
 /build
 /save
+/standbyWip
 
 # misc
 .env.local
