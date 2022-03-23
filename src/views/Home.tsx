@@ -3,14 +3,15 @@ import React from 'react'
 import styled from 'styled-components'
 // import Typewriter from 'typewriter-effect'
 
-// import Gallery3D from '../components/Gallery3D'
+import ContactUs from '../components/ContactUs'
 
-  // overflow:scroll;
 const StyledHome = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow:scroll;
   overflow-x:hidden;
 `
 const StyledTitle = styled.h1`
@@ -22,33 +23,6 @@ const StyledTitle = styled.h1`
     font-size: 1.5rem;
   }
 `
-/*
-const StyledImagePreview = styled.img`
-  align-items: center;
-  width: 70%;
-  border-radius: 10px;
-  border: 2px solid #fff;
-  cursor: pointer;
-
-  &:hover {
-    border: 2px solid #adadad;
-    opacity: 0.7 !important;
-    filter: alpha(opacity=70) !important;
-  }
-
-  @media only screen and (max-width: 600px) {
-    width: 90%;
-  }
-`
-*/
-
-
-// const StyledGalleryPreview = styled.div`
-//   align-items: center;
-//   width: 60vw;
-//   margin-top: 6vh;
-//   cursor: pointer;
-// `
 
 const Center = styled.div`
   align-items: center;
@@ -145,7 +119,7 @@ const Home: React.FC = () => {
         </ModelsGrid>
         <br />
         <br />
-        {/* <StyledLinkVisitGallery to="/gallery">Visit the gallery</StyledLinkVisitGallery> */}
+        <ContactUs />
         <br />
       </Center>
     </StyledHome>

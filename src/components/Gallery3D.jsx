@@ -45,7 +45,7 @@ const Gallery3D = ({
         camera={{ fov: startCameraFov, position: startCameraPosition }}
         resize={{ polyfill: ResizeObserver }}>
         <Suspense fallback={null}>
-            <color attach="background" args={['#191920']} />
+            <color attach="background" args={['#463f32']} />
             <ambientLight intensity={0.05} />
             <spotLight
               color="#FFFFFF"
