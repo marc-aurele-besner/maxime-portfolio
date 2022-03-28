@@ -1,5 +1,7 @@
 # Maxime Portfolio &nbsp;&nbsp;&nbsp;<a href="https://app.netlify.com/start/deploy?repository=https://github.com/marc-aurele-besner/maxime-portfolio"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
 
+https://maximebeta.netlify.app/
+
 This website is made with react, three and react-three-fiber
 
 Want to use this website as your template for your next project?
