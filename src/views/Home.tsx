@@ -1,8 +1,9 @@
 import React from 'react'
 // import { Link } from "react-router-dom";
 import styled from 'styled-components'
-// import Typewriter from 'typewriter-effect'
+import Typewriter from 'typewriter-effect'
 
+import Bio from '../components/Bio'
 import ContactUs from '../components/ContactUs'
 
 const StyledHome = styled.div`
@@ -40,15 +41,15 @@ const Center = styled.div`
 //   }
 // `
 
-// const StyledTypewriter = styled.div`
-//   color: #fff;
-//   font-size: 1.5rem;
-//   height: 10vh;
+const StyledTypewriter = styled.div`
+  color: #fff;
+  font-size: 1.5rem;
+  height: 10vh;
 
-//   &:hover {
-//     color: #adadad;
-//   }
-// `
+  &:hover {
+    color: #adadad;
+  }
+`
 
 const ModelsGrid = styled.div`
   display: grid;
@@ -84,14 +85,14 @@ const Home: React.FC = () => {
         <br />
         <br />
         <StyledTitle>Maxime</StyledTitle>
-       {/* <StyledTypewriter>
+       <StyledTypewriter>
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString('Bonjour, voici mon portfolio.')
+                .typeString('Welcome to my portfolio.')
                 .pauseFor(300)
                 .deleteAll()
-                .typeString('Je vais rajouter plus de models bientôt.')
+                .typeString('Click on the models to see them in 3d.')
                 .pauseFor(300)
                 .start();
             }}
@@ -100,26 +101,33 @@ const Home: React.FC = () => {
               loop: true,
             }}
           />
-        </StyledTypewriter> */}
+        </StyledTypewriter>
         <br />
         <br />
         <ModelsGrid>
           <Content>
             <Image src='/images/Gonk.png' alt='Gonk' onClick={() => window.open('/gallery/Gonk')} />
           </Content>
-          <Content>
+          {/* <Content>
             <Image src='/images/Gunblade.png' alt='GunbladeScene' onClick={() => window.open('/gallery/GunbladeScene')} />
-          </Content>
+          </Content> */}
           <Content>
             <Image src='/images/Desk.png' alt='Desk' onClick={() => window.open('/gallery/Desk')} />
           </Content>
           <Content>
-            <Image src='/images/Gunblade2.png' alt='Gunblade' onClick={() => window.open('/gallery/Gunblade')} />
+            <Image src='/images/Speeder.png' alt='Desk' onClick={() => window.open('/gallery/Speeder')} />
           </Content>
+          {/* <Content>
+            <Image src='/images/Gunblade2.png' alt='Gunblade' onClick={() => window.open('/gallery/Gunblade')} />
+          </Content> */}
         </ModelsGrid>
         <br />
         <br />
+        <Bio />
+        <br />
+        <br />
         <ContactUs />
+        <br />
         <br />
       </Center>
     </StyledHome>
