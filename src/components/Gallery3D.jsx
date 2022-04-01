@@ -4,15 +4,12 @@ import { Canvas } from '@react-three/fiber'
 import { Loader, OrbitControls } from '@react-three/drei'
 import { ResizeObserver } from '@juggle/resize-observer'
 
-// import Gonk from '../models/Gonk'
-// import Desk from '../models/Desk'
 // import Gunblade from '../models/Gunblade'
 // import GunbladeScene from '../models/GunbladeScene'
 
 const Gonk = lazy(() => import('../models/Gonk'))
 const Desk = lazy(() => import('../models/Desk'))
-const Gunblade = lazy(() => import('../models/Gunblade'))
-const GunbladeScene = lazy(() => import('../models/GunbladeScene'))
+// const Speeder = lazy(() => import('../models/Speeder'))
 
 const Gallery3D = ({
   galleryId,
@@ -46,7 +43,7 @@ const Gallery3D = ({
         resize={{ polyfill: ResizeObserver }}>
         <Suspense fallback={null}>
             <color attach="background" args={['#463f32']} />
-            <ambientLight intensity={0.3} />
+            <ambientLight intensity={0.5} />
             <spotLight
               color="#FFFFFF"
               position={[0, 100, 75]}
@@ -81,7 +78,14 @@ const Gallery3D = ({
                 scale={new THREE.Vector3(0.5, 0.5, 0.5)}
               />
             )}
-            {galleryId === 'Gunblade' && (
+            {/* {galleryId === 'Speeder' && (
+              <Speeder 
+                position={new THREE.Vector3(0, 10, 0)} 
+                rotation={new THREE.Euler(0, 0, 0)}
+                scale={new THREE.Vector3(0.25, 0.25, 0.25)}
+              />
+            )} */}
+            {/* {galleryId === 'Gunblade' && (
               <Gunblade 
                 position={new THREE.Vector3(0, 10, 0)} 
                 rotation={new THREE.Euler(0, 0, 0)}
@@ -94,7 +98,7 @@ const Gallery3D = ({
                 rotation={new THREE.Euler(0, 0, 0)}
                 scale={new THREE.Vector3(0.02, 0.02, 0.02)}
               />
-            )}
+            )} */}
             <OrbitControls maxPolarAngle={Math.PI / 2 - 0.025} minPolarAngle={0} makeDefault />
         </Suspense>
       </Canvas>

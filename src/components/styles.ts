@@ -106,6 +106,21 @@ export const Box = styled.div`
   width: 100%;
 `
 
+export const BioBox = styled.div`
+  padding-bottom: 2px;
+  padding-left: 5vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80vw;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 0.8em;
+    padding-left: 2vw;
+    width: 95vw;
+  }
+`
+
 export const BaseLabel = styled.label`
   color: #FFFFFF;
   display: block;
