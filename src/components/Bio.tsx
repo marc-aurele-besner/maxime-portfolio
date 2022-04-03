@@ -15,7 +15,10 @@ const Bio = () => {
                     <br />
                     <BaseLabel>
                         Before that, I used to work as a mixologist and compete in a few regional and national competitions in cocktail crafting. Those past years in the restoration industries gave me skills and psychological knowledge to push my creative mind and work under pressure. Through these years I have gained experience through various computer software such as Acomba, Excell, Photoshop, etc.
-In 2020, I decided to change careers and leave the restaurant business. I now work in the field of video games. I am currently QA at Warner Brother in Montreal.
+                    </BaseLabel>
+                    <br />
+                    <BaseLabel>
+                        In 2020, I decided to change careers and leave the restaurant business. I now work in the field of video games. I am currently QA at Warner Brother in Montreal.
                     </BaseLabel>
                     <br />
                     <BaseLabel>
