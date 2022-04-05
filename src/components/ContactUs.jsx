@@ -49,7 +49,10 @@ const FormErrors = ({ errors }) => {
   )
 }
 
-const ContactUs = () => {
+
+const ContactUs = ({
+  id
+}) => {
   const [send, setSend] = useState(false)
   const [state, setState] = useState({
     name: '',
@@ -105,7 +108,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <div className="help-title">
+      <div className="help-title" id={id}>
         <h1>Contact-Us</h1>
       </div>
       <div className="help-content">

@@ -110,8 +110,6 @@ export const BioBox = styled.div`
   padding-bottom: 2px;
   padding-left: 5vw;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   width: 80vw;
 
   @media only screen and (max-width: 600px) {
@@ -301,54 +299,6 @@ export const StyledBox = styled.div`
   display: flex;
 `
 
-export const StyledBoxNftsList = styled.div`
-  flex: 1;
-  width: 40%;
-`
-
-export const StyledBoxListingDetail = styled.div`
-  flex: 2;
-  border: 2px solid #c7c6c6;
-  border-radius: 10px;
-  margin-top: 30px;
-  margin-left: 8px;
-  padding: 10px;
-  width: 60%;
-`
-
-export const StyledPriceInput = styled(Input)`
-  width: 60%;
-  height: 50px;
-  margin-left: 10px;
-  margin-top: 10px;
-  size: 20px;
-  font-size: 1.5em;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
-`
-
-export const CurrencyLabel = styled.span`
-  color: #FFFFFF;
-  font-size: 1.5em;
-  font-weight: 300;
-  font-weight: 600;
-  padding: 10px;
-`
-
-export const StyledSelectedNft = styled.p`
-  border: 2px solid #c7c6c6;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 6px;
-  margin-bottom: 8px;
-
-  @media only screen and (max-width: 600px) {
-    font-size: 1em;
-    letter-spacing: 0px;
-    padding: 8px;
-  }
-`
 
 export const StyledRefresh = styled.button`
   background-color: transparent;
@@ -386,34 +336,6 @@ export const StyledDelete = styled.button`
   }   
 `
 
-export const StyledReturnMarket = styled.button`
-  background-color: transparent;
-  color: #c7c6c6;
-  border: 2px solid #c7c6c6;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 1px;
-  font-size: 0.5em;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
-  cursor: pointer;
-  outline: none;
-
-  &:hover {
-    background-color: #4e4e4e;
-  }
-`
-
-export const StyledAllNft = styled.p`
-  padding-left: 10px;
-  padding-right: 10px;
-
-  @media only screen and (max-width: 600px) {
-    font-size: 1em;
-    letter-spacing: 0px;
-    padding: 8px;
-  }
-`
 
 export const BigLabel = styled(BaseLabel)`
   font-size: 1.25em;   
@@ -434,32 +356,6 @@ export const StyledBigButton = styled(StyledButton)`
   font-family: 'Roboto', sans-serif;
 `
 
-export const SoundBasicControls = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-`
-
-export const PlayPauseButton = styled.button`
-  background-color: transparent;
-  color: #c7c6c6;
-  border: 2px solid #c7c6c6;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 1px;
-  font-size: 0.5em;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
-  cursor: pointer;
-  outline: none;
-
-  &:hover {
-    background-color: #4e4e4e;
-  }
-`
 
 export const Radio = styled.input`
   margin-right: 10px;
@@ -477,22 +373,4 @@ export const Checkbox = styled.input`
 export const BigCheckbox = styled(Checkbox)`
   height: 30px;
   width: 30px;
-`
-
-export const SoundVolumeControls = styled.button`
-  background-color: transparent;
-  color: #c7c6c6;
-  border: 2px solid #c7c6c6;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 1px;
-  font-size: 0.5em;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
-  cursor: pointer;
-  outline: none;
-  
-  &:hover {
-      background-color: #4e4e4e;
-  }
 `
