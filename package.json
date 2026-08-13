@@ -49,6 +49,7 @@
     ]
   },
   "resolutions": {
+    "@tootallnate/once": "^2.0.1",
     "@types/react": "^19.0.0",
     "resolve-url-loader": "^5.0.0",
     "serialize-javascript": "^7.0.3",
