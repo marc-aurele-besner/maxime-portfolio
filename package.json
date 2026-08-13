@@ -16,7 +16,6 @@
     "@react-three/fiber": "^9.0.0",
     "@types/three": "^0.185.0",
     "globalthis": "^1.0.2",
-    "netlify-cli": "^27.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.0.0",
