@@ -10,6 +10,13 @@
         "@uniswap/token-lists"
       ],
       "allowedVersions": "<=1.0.0-beta.34"
+    },
+    {
+      "description": "react-scripts 5 (Create React App) is archived and uses an old `resolve` package that does not understand the modern `exports` field. TypeScript 7 dropped the top-level `main` field from its package.json, which breaks `react-scripts` builds. Stay on the 5.x line until the project migrates off react-scripts.",
+      "matchPackageNames": [
+        "typescript"
+      ],
+      "allowedVersions": "<=5"
     }
   ],
   "minimumReleaseAge": "1 day"
