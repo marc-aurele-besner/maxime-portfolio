@@ -21,7 +21,7 @@
     "react-router-dom": "^7.0.0",
     "react-scripts": "^5.0.0",
     "styled-components": "^6.0.0",
-    "three": "^0.185.0",
+    "three": "^0.186.0",
     "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
