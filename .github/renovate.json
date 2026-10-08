@@ -17,6 +17,14 @@
         "typescript"
       ],
       "allowedVersions": "<=5"
+    },
+    {
+      "description": "Watch `braces` for a release that fixes GHSA-vfj7-8cjw-p6xm (CVE-2026-93687, stack-exhaustion DoS via deeply nested patterns). Dependabot alert #238 cannot be resolved until upstream ships a patched version. Until then this rule ensures a PR is opened the moment one is published.",
+      "matchPackageNames": [
+        "braces"
+      ],
+      "enabled": true,
+      "vulnerabilityAlerts": true
     }
   ],
   "minimumReleaseAge": "1 day"
