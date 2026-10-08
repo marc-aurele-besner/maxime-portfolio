@@ -52,6 +52,7 @@
     "@tootallnate/once": "^3.0.0",
     "@types/react": "^19.0.0",
     "fast-uri": "^4.0.0",
+    "proxy-addr": "^2.0.8",
     "resolve-url-loader": "^5.0.0",
     "serialize-javascript": "^7.0.3",
     "sharp": "^0.35.3",
