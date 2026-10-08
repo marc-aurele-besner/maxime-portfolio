@@ -1,0 +1,20 @@
+diff --git a/node_modules/braces/lib/parse.js b/node_modules/braces/lib/parse.js
+index 3a6988e..0827d64 100644
+--- a/node_modules/braces/lib/parse.js
++++ b/node_modules/braces/lib/parse.js
+@@ -197,6 +197,15 @@ const parse = (input, options = {}) => {
+     if (value === CHAR_LEFT_CURLY_BRACE) {
+       depth++;
+ 
++      // Patched via patches/braces+3.0.3.patch (Dependabot alert #238, GHSA-vfj7-8cjw-p6xm / CVE-2026-93687).
++      // Bound the brace nesting depth so deeply-nested patterns under the
++      // MAX_LENGTH character cap cannot drive the recursive AST walkers into
++      // a stack-exhaustion crash. Remove this guard once braces >=3.0.4 ships.
++      const maxDepth = typeof opts.maxDepth === 'number' ? opts.maxDepth : 1000;
++      if (depth > maxDepth) {
++        throw new SyntaxError(`Input brace nesting depth (${depth}), exceeds max depth (${maxDepth})`);
++      }
++
+       const dollar = prev.value && prev.value.slice(-1) === '$' || block.dollar === true;
+       const brace = {
+         type: 'brace',
