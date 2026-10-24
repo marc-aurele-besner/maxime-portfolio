@@ -9514,7 +9514,7 @@ __metadata:
     styled-components: "npm:^6.0.0"
     three: "npm:^0.186.0"
     typescript: "npm:^5.6.3"
-    typewriter-effect: "npm:^2.18.2"
+    typewriter-effect: "npm:^3.0.0"
   languageName: unknown
   linkType: soft
 
@@ -13432,16 +13432,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typewriter-effect@npm:^2.18.2":
-  version: 2.22.0
-  resolution: "typewriter-effect@npm:2.22.0"
-  dependencies:
-    prop-types: "npm:^15.8.1"
-    raf: "npm:^3.4.1"
+"typewriter-effect@npm:^3.0.0":
+  version: 3.3.0
+  resolution: "typewriter-effect@npm:3.3.0"
   peerDependencies:
+    puppeteer: ">=22.0.0"
     react: ">=17.0.0"
     react-dom: ">=17.0.0"
-  checksum: 10c0/cef4a169d6afc1ab70f3274c9a7b42ccabaf5c7a682d9d407b7cdddf84b3fc3c922339b444eedcf38d5c572135102da62bcb3d806ca6fcd4b05c4cfd7e48edbd
+  peerDependenciesMeta:
+    puppeteer:
+      optional: true
+  bin:
+    typewriter-effect: dist/cli.js
+  checksum: 10c0/963215feffeee3e806cd7f5253afac16b048ce377c7d1639e8d9edf846b411268149577404f9ffe32c0a22cd8964e70cfbe99e6667b922b20805c569c2d9407c
   languageName: node
   linkType: hard
 
