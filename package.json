@@ -69,6 +69,7 @@
     "js-yaml": "^5.0.0",
     "webpack-dev-middleware": "^8.3.0",
     "colord": "^2.9.4",
-    "qs": "^6.16.0"
+    "qs": "^6.16.0",
+    "body-parser": "^2.4.0"
   }
 }
