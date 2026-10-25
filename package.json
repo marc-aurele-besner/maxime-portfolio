@@ -70,6 +70,7 @@
     "webpack-dev-middleware": "^8.3.0",
     "colord": "^2.9.4",
     "qs": "^6.16.0",
-    "body-parser": "^2.4.0"
+    "body-parser": "^2.4.0",
+    "launch-editor": "^2.14.2"
   }
 }
